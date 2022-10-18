@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if:만약에 ~라면
+        const date = new Date(); //날짜, 시간 객체
+        const hour = date.getHours(); //현재 시간 구하기
+        console.iog(hour)
+        
+        // &&: 두개 다 true면 true
+        if (hour <= 6 && hour <12) { //6~11
+            alert('오전입니다')
+        } else if(hour >= 12 && hour <= 18) { //12~18
+            alert('오후입니다.')
+        } else {
+            alert('저녁입니다.');
+        }
+        // if (hour > 12) {
+        //     alert('오후입니다.')
+        // }
+    </script>
+</body>
+</html>
