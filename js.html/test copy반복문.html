@@ -8,8 +8,21 @@
 </head>
 <body>
     <script>
+        // length=5로 길이 표시
+        // {x}는 0~4까지 arr에 표기한 순서대로 콘솔된다
+        // splice(인덱스 번호, 제거할 데이터 갯수)
+        // splice(1, 2)=1,test가 빠지고 (1,2, '끼어들기')하면 인덱스1,2번이 빠지고 끼어들기가 들어간다
+        // arr.splice(1, 2, '끼어들기')
         let arr = ["hi" ,1, "test", 2 ,10]
-        console.log(arr[2]);
+
+        console.logo(arr.slice(1,3));
+
+        arr.pop();
+
+        console.log(arr);
+        // console.log(arr.join("-"))
+
+        // console.log(arr[2]);
     </script>
 </body>
 </html>

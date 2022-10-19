@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            console.log(i+ "번째 반복문 입니다.")
+
+            if(i === 2) {
+                continue;
+            }
+            console.log("안녕하세요")
+            // continue: continue 아래에 있는 코드를 실행하지않고 반복문으로 돌아간다
+            // for,while, do while 에서 쓰임
+            // break문을 만나면 아래에 있는 코드는 실행이되지않고
+            // 바로 반복문을 나온다 while,do while, for 문에서 사용
+            
+            // const isContinue = confirm('계속하시겠습니까?')
+            // // 혹인:true
+            // // 취소:false
+            // if(!isContinue) {
+            //     break;
+            // }
+        }
+    </script>
+</body>
+</html>

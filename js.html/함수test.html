@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수 정의
+         function sum (a, b) { //a=1, b=2
+             let sum = a + b;
+             console.log(sum); //대신 return sum;으로 가능 
+            //  return문을 만나면 함수는 끝난다
+         }
+
+        // 함수 정의 2번쨰 방법
+            // const sum = function(a, b) {
+            //     let sum = a+ b;
+            //     console.log(sum);
+            // }
+
+        // 함수 정의 3번쨰(ES6, 화살표 함수)
+
+        // a부분 매게함수()를 없애도 상관없음. 특이점임
+            // const sum2 = (a) => {
+            //     let sum = a;
+            //      console.log(sum);
+            // }
+        // 함수 실행
+         sum(1, 2)
+         sum(3, 4)
+         sum(10, 10)
+         sum(1, 6)
+        
+    </script>
+</body>
+</html>
