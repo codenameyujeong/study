@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var num = prompt("년도입력", 0);
+        // var msg = "윤년이 아닙니다.";
+
+        // if ( num%4==0 && num%100 != 0 || num%400==0) {
+        //    msg = "윤년입니다";
+        // }
+
+        // document.write(msg);
+
+        function isLeapyear(year) {
+            return (year % 4 === 0) && (year % 100 !==0) || (year % 400 === 0)
+        }
+        
+        let result = isLeapyear(2020)
+
+        if (result) {
+            console.log('윤년입니다')
+        } else {
+            console.log('윤년이 아닙니다')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sample (...items) {
+            console.log(items);
+        }
+
+        const array = [1, 2, 3, 4]
+
+        console.log(`전개 연산자를 사용하지 않을때: ${sample(array)}`);
+        //[[1, 2, 3, 4]]
+        console.log(`전개 연산자를 사용할 때: ${sample(...array)}`);
+        //[[1, 2, 3, 4]]
+
+        // 03,기본 매개변수
+        function earnings(name, wage, hours) {
+            console.log('${name}님의 급여 정보')
+            console.log('시급: ${name}님의 급여 정보')
+            console.log('근무 시간: ${hours}')
+            console.log('급여: ${wage*hours}원')
+            console.log('===')
+        }
+        earnings('구름')
+        earnings('별', 10000)
+        earnings('달', 10000, 52)
+
+    //     function sample() {
+    //         console.log(arguments); // 매개변수를 배열로 받아옴
+
+    //         for (let i = 0; i <arguments.length; i++) {
+    //             console.log(`${i}번째: ${arguments[i]}`);
+    //         }
+    //     }
+
+    //     sample(1, 2);
+    //     sample(1, 2, 3);
+    //     sample(1, 2, 3, 4);
+    // </script>
+</body>
+</html>
