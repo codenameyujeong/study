@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const f = new Number(273);   //객체 생성
+        console.log(f.toFixed(12))    //.toFixed는 소수점을 만들어내는 것이다 (3)은 소수점 3자리를 의미한다
+        const d = new Date();        //객체 생성
+        d.getDate()                  // Date 객체 d에서 getDate는 자바스크립트에서 지원하는 날짜다
+
+        console.log(d.getDay())
+
+        const s = new String("안녕하세요")
+        const s1 = new String("12345")
+        console.log(s1)
+
+        const result = Math.min(...s1)
+        console.log(result);
+
+        let str = "제이름은, k, a, s, h"                    // 문자열의 결과는 배열형식으로 나온다
+
+        for (i = 0; i < str.length; i++) {
+            console.log(str[i])                // 배열처럼 for문 사용가능
+        }
+
+        let num = 1;
+        console.log(num.toFixed(5));
+
+        const word = str.split("", 2);           //한 문장을 단어별로(띄어쓰기 기준)잘라 배열로 만듦
+        console.log(word);                        // ` `는 단어별로, '' or ""는 한 글자별로 배열을 만듦
+        // '', 2 를 선택하면 두번째 자리까지 선택하는 것이다
+
+        let str2 = "   i want go home                  "
+        console.log(str2.trim())                  // trim은 양쪽 공간에 공백을 없애주는 역할이다
+
+        // const word = str2.indexOF('flower');
+        
+        // if (word === -1) {
+        //     alert('찾는 문자가 없습니다')
+        // }
+        
+        //const word = str2.substring(1, 3)
+        //const word = str2.
+         console.log(word)
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

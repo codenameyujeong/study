@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //2. 객체 생성자 방식
+        //객체는 속성+메소드 (함수)로 구성된다.
+        //function 뒤에 함수로 지정할거면 소문자 예로들어pet객체로생성하려면
+        //Pet 대문자로 만들어야 한다.
+
+        //객체를 정의
+        function Pet(nameVal, ageVal, catname) {
+            //속성
+            this.name = nameVal
+            this.age = ageVal
+            this.cat = catname
+            this.eat = function (food) {
+                console.log(`${this.name}이가 ${food}를 먹습니다.`)
+            }
+            this.age = function (ages) {
+                console.log(this.ages);
+            }
+            this.cat = function (snowcat) {
+                console.log(`${this.cat}의 종류는 ${snowcat}입니다`);
+            }
+        }
+
+        //객체를 생성
+        //객체를 쓰는 이유? 코드의 생산성이 높아진다.
+        //객체가 생성되는 순간 속성에 값이 활당된다.
+        const pet = new Pet("구름", 5, "snowcat") //객체 안에 있는 걸 가져다 쓸 수 있다.
+        const pet2 = new Pet("별", 10, "snowcat2")
+        const pet3 = new Pet("달", 7, "snowcat3")
+        const pet4 = new Pet("해", 9, "snowcat4")
+
+        pet.eat('밥')
+        pet.age()
+        pet.cat("snowcat")
+
+        pet2.eat("밥")
+        pet2.age()
+        pet2.cat("snowcat2")
+
+        pet3.eat('밥')
+        pet3.age()
+        pet3.cat('snowcat3')
+
+        pet4.eat('밥')
+        pet4.age()
+        pet4.cat('snowcat4')
+    </script>
+</body>
+
+</html>
