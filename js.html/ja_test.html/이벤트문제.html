@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <input type="text"> cm =
+    <span></span>
+    <select>
+      <option value="10">mm</option>
+      <option value="0.01">m</option>
+      <option value="0.393701">inch</option>
+    </select>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let disnum
+          let changnum = 10
+  
+          const select = document.querySelector('select')
+          const input = document.querySelector('input')
+          const span = document.querySelector('span')
+  
+          const calculate = () => {
+            span.textContent = (currentVal * transVal).toFixed(2)
+          }
+  
+          select.addEventListener('change', function(e){
+            const options = event.currentTarget.options
+            const index = event.currentTarget.options.selectedIndex
+            transVal = options[index].value
+            calculate()
+          })
+  
+          input.addEventListener('keyup', function(e){
+            currentVal = e.currentTarget.value
+            calculate()
+          })
+        })
+      </script>
+  </body>
+</html>
