@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러 객체</title>
+</head>
+<body>
+
+    <button onclick="loc()">이동!</button>
+    <button onclick="back()">뒤로!</button>
+    <script>
+
+        function loc() {
+            location.href = "./test.html" //페이지 이동
+        }
+
+        function back() {
+            history.go(-1) //뒤로가기
+            //history.back()
+        }
+
+        var sWidth =  screen.width;
+        var sHeight =  screen.height;
+        var sColor =  screen.colorDepth;
+        console.log(sWidth);
+        console.log(sHeight);
+        console.log(sColor);
+
+    var local = location.href;
+    console.log(local);
+
+    var NaviInfo = "User-agent header sent: " + navigator.userAgent;
+    console.log(NaviInfo);
+    </script>
+</body>
+</html>
