@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        첫번쨰 div
+        <span>테스트입니다</span>
+    </div>
+    <script>
+        //createElement('태그명') 해당요소를 생성
+        const header = document.createElement('h1') //<h1></h1>
+        console.log(header)
+
+        //appendChild : 부모태그 요소 아래에 자식 요소로 넣어준다 
+        //body라는 부모태그아레에 h1이라는자식요소를넣어줌
+        document.body.appendChild(header)
+
+        const box = document.querySelector('.box')
+        const spanTag = document.querySelector('span')
+
+        box.appendChild(header)
+        box.removeChild(spanTag)
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            user-select: none;
+            /*클릭 여러번 했을 때 글자 선택되는 걸 방지*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>클릭횟수: 0</h1>
+    <button id="connect">이벤트 연결</button>
+    <button id="disconnect">이벤트 제거</button>
+    <p>이벤트 연결 상태: 해제</p>
+    <script>
+        let counter = 0;
+        let disconnect = flase //현재 이벤트가 제거된건지 아닌지 판단하는 변수
+
+        const h1 = document.querySelector('h1');                            //이벤트란? : 사용자가 클릭, 스크롤 등 동작이나 행위를 할 때를 쓰는 말이다
+        const p = document.querySelector('p');                            //이벤트란? : 사용자가 클릭, 스크롤 등 동작이나 행위를 할 때를 쓰는 말이다
+        const conButton = document.querySelector('#connect');                            //이벤트란? : 사용자가 클릭, 스크롤 등 동작이나 행위를 할 때를 쓰는 말이다
+        const disconButton = document.querySelector('#disconnect');                            //이벤트란? : 사용자가 클릭, 스크롤 등 동작이나 행위를 할 때를 쓰는 말이다
+
+
+        // 방법 (1)
+        //지목태그.addEventListener('이벤트명', 함수)
+        h1.addEventListener('click', () => {
+            // alert('됩니다')
+            counter += 500
+            h1.textContent = `클릭횟수 : ${counter}`
+        })         //사용하고 싶은 기능을 넣는다
+        //클릭 했을 때 실행되길 원하는 코드 작성 (css에선 h1:hover 같은 느낌)
+
+        // 방법 (2)
+        const listner = function () {
+            counter += 2;
+            h1.textContent = `클릭횟수 : ${counter}`;
+        }
+        h1.addEventListener('click', listner)       // 클릭하는 이벤트와 함수 값으로 실행됨
+
+        conButton.addEventListener('click', function() {
+            if(isConnect === false) //이벤트가 연결이 안된 상태일때
+            h1.addEventListener('click',listner)
+            p.textContent = '이벤트 연결상태 : 연결'
+            isConnect = true
+        }) //클릭했을 때 이벤트가 실행 하게끔
+
+        disconButton.addEventListener('click', () => {
+
+        }) //클릭했을 때 이벤트가 제거 되게끔
+
+
+        h1.removeEventListener('click', listner)    // 클릭하는 이벤트와 함수 값을 지워버린다
+        if (disconnect === false) {             // 만약 이벤트 연결이 안된것이 false라면
+            h1.addEventListener('click', listner);
+            p.textContent =
+            }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

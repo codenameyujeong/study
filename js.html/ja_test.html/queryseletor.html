@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="txt">안녕하세요</h1>
+   <h1 class="txt">안녕하세요</h1>
+   <h1 class="txt">안녕하세요</h1>
+   <script>
+    //태그 선택자, 클래스 선택자 , 아이디 선택자 ....
+    //document.querySelector('선택자') -> 해당요소를 가져온다.
+    // const header = document.querySelector('h1')
+    // console.log(header)
+
+    // //요소.style.css속성(카멜) = css 속성값
+    // header.style.color = 'red'
+    // header.style.background = 'black'
+    // header.style.padding = '10px'
+
+    //document.querySelectorAll('선택자') - > 해당요소를 모두 가져온다.
+    const headers = document.querySelectorAll('.txt')
+    console.log(headers)
+    //방법1
+    for (let i = 0; i < headers.length; i++) {
+        headers[i].style.color = 'red'
+        headers[i].style.backgroundColor = 'black'
+        console.log(headers[i])
+    }
+    //방법2
+    // for (header of headers) {
+    //     header.style.color = 'red'
+    //     header.style.backgroundColor = 'black'
+    // }
+    // //방법3
+    // headers.forEach(function(header)) {
+    //     header.style.color = 'red'
+    //     header.style.backgroundColor = 'black'
+    // }
+   </script>
+</body>
+</html>

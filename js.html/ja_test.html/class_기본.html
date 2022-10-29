@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //속성과 메서드로 구성되어있다
+        class Pet {
+            // constructor: 생성자 함수
+            constructor(nameVal,ageVal,catVal) {
+                this.name = nameVal
+                this.age = ageVal
+                this.cat = catVal
+            }  
+
+            //메소드 (함수)
+            eat (food) {
+                console.log(`${this.name}이가 ${food}를 먹습니다.`)
+            }
+
+            agePrint () {
+                console.log(`${this.name}는 ${this.age}살 입니다.`)
+            }
+
+            catPrint () {
+                console.log(`${this.name}는 ${this.cat}종 입니다.`)
+            }
+        }
+
+        const pet = new Pet('구름', 7, '코숏')
+        const pet2 = new Pet('별', 7, '페르시안')
+
+        console.log(pet.name)
+        console.log(pet.age)
+        console.log(pet.cat)
+        pet.eat()
+        pet.agePrint()
+        pet.catPrint()
+
+        pet2.eat()
+        pet2.agePrint()
+        pet2.catPrint()
+    </script>
+</body>
+
+</html>
