@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer_wrap">
+        <h1>콘텐츠 탐색 선택자</h1>
+        <section id="inner1">
+            <h1>이너1</h1>
+            <p><span>내용1</span></p>
+            <p><span>내용2</span></p>
+            <p><span>내용3</span></p>
+        </section>
+        <section id="inner2">
+            <h1>이너2</h1>
+            <p><span>내용4</span></p>
+            <p><span>내용5</span></p>
+            <p><span>내용6</span></p>
+        </section>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            // $("#inner1 p:contains(내용1)").css({"background-color":"#ff0"})
+            // $("#inner1 p:has(span)").css({"background-color":"red"})
+            // $("#outer_wrap").contents().css({"background-color":"red"})
+            // $("#inner1").find('.test').css({"background-color":"red"})
+
+            console.log($('.test2').is(":visible"))
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function asyncFunc() {
+            let promise = new Promise((resolve,reject)=>{
+                setTimeout(()=> {resolve("완료")}, 2000)
+            })
+            
+            let result = await promise
+
+            alert(result)
+        }
+
+        asyncFunc()
+    </script>
+   
+</body>
+</html>
