@@ -341,7 +341,7 @@
 
 .wrap_5 {
     padding: 72px 0px;
-    border-top: 1px solid rgb(238, 238, 238);
+    /* border-top: 1px solid rgb(238, 238, 238); */
     width: 800px;
     display: flex;
 }
@@ -366,19 +366,19 @@
     width: 200px;
     padding-top: 36px;
     font-size: 13px;
-    color: rgb(51, 51, 51);
+    background-color:rgb(247, 247, 247);;
     line-height: 18px;
 }
 
 .list_1 {
     width: 180px;
     padding: 0px 18px 18px;
-    background-color: rgb(247, 247, 247);
+    /* background-color: rgb(247, 247, 247); */
     word-break: break-all;
 }
 
 .text_ul_2 {
-    width: 1000px;
+    /* width: 1000px; */
     padding-top: 36px;
     font-size: 13px;
     color: rgb(51, 51, 51);
@@ -386,12 +386,13 @@
     float: right;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .list_1 {
     width: 180px;
     padding: 0px 18px 18px;
-    background-color: rgb(247, 247, 247);
+    /* background-color: rgb(247, 247, 247); */
     word-break: break-all;
 }
 .text_ul2 {
@@ -400,6 +401,190 @@
     
 }
 
+.wrap_6 {
+    box-sizing: border-box;
+    margin: 0;
+}
 
+.section8 {
+ height: 150px;
+ 
+}
 
+.text_sp {
+    border-top: 1px solid blanchedalmond;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    
 
+}
+
+.text_sp_1 {
+    text-align: center;
+   
+
+}
+
+.text_ul_3 {
+    display: flex;
+    padding: 10px 0px 71px;
+    list-style-type: none;
+    
+}
+
+.list_12 {
+    width: 340px;
+    display: list-item;
+    list-style-type: none;
+    color: rgb(95, 0, 128);
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.section_9 {
+    display: flex;
+    position: relative;
+    padding: 14px 0px 17px;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+    border-bottom: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px
+    
+}
+
+.st_1 {
+    width: 179px;
+    padding-left: 29px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(95, 0, 128);
+    text-align: center;
+}
+
+.st_2 {
+    text-align: center;
+    padding-left: 30px;
+}
+
+.section_10 {
+    display: flex;
+    padding: 39px 0px 40px;
+    border-top: 1px solid rgb(221, 221, 221)
+}
+
+.section_11 {
+    display: flex;
+    padding: 39px 0px 40px;
+    border-top: 1px solid rgb(221, 221, 221)
+}
+
+.section_12 {
+    display: flex;
+    padding: 39px 0px 40px;
+    border-top: 1px solid rgb(221, 221, 221)
+}
+
+.st_3 {
+    width: 340px;
+    padding-left: 31px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.st_4 {
+    padding: 2px 20px 0px 0px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    white-space: pre-line;
+}
+
+.st_5 {
+    width: 340px;
+    padding-left: 31px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.st_6 {
+    padding: 2px 20px 0px 0px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    white-space: pre-line;
+}
+
+.st_7 {
+    width: 340px;
+    padding-left: 31px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.st_8 {
+    padding: 2px 20px 0px 0px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    white-space: pre-line;
+}
+
+.section_13 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    /* justify-content: center; */
+}
+
+.st_00 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    color: rgb(51, 51, 51);
+    justify-content: center;
+}
+.section_14 {
+    padding: 7px 0px 40px 3px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(102, 102, 102);
+}
+
+.st_9 {
+    padding-left: 0px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+}
+
+.st_10 {
+    padding-left: 0px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.section_15 {
+    /* position: relative; */
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    border-radius: 6px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.st_11 {
+    width: 124px;
+    height: 124px;
+    background: url(./imgs/4ac37d5ea775d83badfa3ec591c15ff3.jpg);
+    background-repeat: no-repeat;
+    0% 0% / cover no-repeat;
+}
