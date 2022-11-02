@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="list_1">
+                <span class="child">번</span>
+                <span>2번</span>
+                <span class="child3">3번</span>
+                <span>4번</span>
+                <span class="child5">5번</span>
+            </li>
+            <li id="list_2">리스트2</li>
+            <li id="list_3">리스트3</li>
+        </ul>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            // var result1 = $(".child").html();
+            // console.log(result1)
+            var result1 = $(".list_1").text();
+            console.log(result1)
+            $(".list_1").text("<a href='#'>클릭</a>");
+            console.log($("a").attr("target"))
+            ($("a").attr("href", "https://www.ezenac.co.kr/"))
+
+            
+        })
+    </script>
+</body>
+</html>

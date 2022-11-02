@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <ul id="wrap">
+            <li id="list_1">
+                <span class="child">1번 자식입니다</span>
+                <span class="child2">2번 자식입니다</span>
+                <span>3번 자식입니다</span>
+            </li>
+            <li id="list_2">리스트2</li>
+            <li id="list_3">리스트3</li>
+        </ul>
+    </div>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#list_1').parents().css("boreder", "1px solid red")
+            //  parent,parents(s를붙이면 부모태그전부)
+            //     $('#list_1').children().css("boreder","1px solid red")
+            //     $('#list_1').children('.child').css("boreder","1px solid red")
+
+            $(".child2").prev().css("border", "1px solid red")
+            $(".child2").next().css("border", "1px solid blue")
+
+            $(function () {
+                var obj = [
+                    {
+                        area: '서울'
+                    name: "라이언"
+                    }, {
+                        area: '인천'
+                    name: "어피치"
+                    }, {
+                        area: '부산'
+                    name: "죠르디"
+                    }
+                ]
+
+
+                var arr2 = $.map(obj, function (val, idx) {
+                    if (val.area === '서울') {
+                        return true
+                    } else {
+                        return false
+
+                    }
+
+                    var idxNum = $('li').index($('.list_2'))
+                    console.log(idxNum)
+
+                    // var names = ["김부장", "정부장", "이부장"]
+
+                    // var idxNum = $.inArray("정부장", names)
+                    // console.log(idxNum)
+                    // console.log($.isArray(names))
+
+                    // var arr1 = $.map(obj, function(val, idx){
+                    //     if (val.area ==='서울') {
+                    //         return val
+                    //     }
+                })
+                console.log(arr1)
+
+                // $(obj).each(function(index, val) {
+                //     console.log(index, val)
+            })
+        })
+
+    </script>
+</body>
+
+</html>
